@@ -1,7 +1,5 @@
  import React from 'react';
 
- const Movie = () => {
-   <h1>Movie</h1>
- }
+ const Home = () => <h1>Movies</h1>;
 
- export default Movie;
+ export default Home;
