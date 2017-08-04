@@ -4,14 +4,14 @@ import Navigation from './components/Navigation';
 import { Movie } from './components';
 import { Route } from 'react-router-dom';
 import MovieList from './components/MovieList';
-// import { SingleMovie } from './components'
+import SingleMovie from './components/SingleMovie';
 
 const App = () => (
   <div>
     <Navigation />
       <Route exact path="/" component={Movie}/>
       <Route exact path='/movies' component={MovieList}/>
-      {/* <Route path="/movies" component={SingleMovie}/>    */}
+      <Route exact path='/movies/:id' component={SingleMovie}/>
 
   </div>
 )

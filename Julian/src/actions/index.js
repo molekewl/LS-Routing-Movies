@@ -12,7 +12,7 @@ export const getMovie = () => {
 }
 
 export const movieDetails = (id) => {
-  const promise = axios.get('http://localhost:5000/movies/${id}');
+  const promise = axios.get(`http://localhost:5000/movies/${id}`);
   return {
     type: MOVIE_DETAILS,
     payload: promise
