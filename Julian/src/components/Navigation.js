@@ -8,7 +8,9 @@ const Navigation = () => {
     <div>
       <Nav className="App">
         <h1>MOVIES!!!</h1>
+          <Link exact to="/">Home</Link>
           <Link to="/movies">MovieList</Link>
+          {/* <Link to="/movies/:id">SingleMovie</Link>  */}
       </Nav>
     </div>
   );
